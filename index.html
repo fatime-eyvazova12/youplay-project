@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/src/css/index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="container-left">
+          <a class="navbar-brand" href="https://wp.nkdev.info/youplay">
+            <img
+              class="logo-img"
+              src="https://wp.nkdev.info/youplay/wp-content/themes/youplay/assets/images/logo-light.png"
+              alt="logo"
+            />
+          </a>
+          <ul class="page-links">
+            <li class="page-link">
+              <a href="#"
+                >DEMOS <i class="fa-solid fa-caret-down"></i>
+                <span class="label">games</span>
+              </a>
+            </li>
+            <li class="page-link">
+              <a href="/shop.html"
+                >SHOP <i class="fa-solid fa-caret-down"></i>
+                <span class="label">news</span></a
+              >
+            </li>
+            <li class="page-link">
+              <a href="#">BLOG <i class="fa-solid fa-caret-down"></i> </a>
+            </li>
+            <li class="page-link">
+              <a href="#">FEATURES<i class="fa-solid fa-caret-down"></i> </a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-right">
+          <ul class="container-right-list">
+            <li class="container-right-list-element">
+              <a href="#" class="dropdown-toggle"
+                >THEME
+                <i class="icon-row fa-solid fa-caret-down"></i>
+                <span class="label">Buy & Docs</span>
+              </a>
+            </li>
+            <li class="container-right-list-element">
+              <a href="#" class="dropdown-toggle">
+                <i class="icon-user fa-solid fa-user"></i>
+                <i class="icon-row fa-solid fa-caret-down"></i>
+              </a>
+            </li>
+            <li class="container-right-list-element">
+              <a href="#" class="dropdown-toggle">
+                <i class="icon-search fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+            <li class="container-right-list-element">
+              <a href="#" class="dropdown-toggle">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Section Swiper -->
+    <div class="swiper sample-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/src/img/swiper1.jpg" />
+          <div class="text">
+            <h3>Assassin's Creed 4</h3>
+            <a
+              class="btn"
+              href="https://wp.nkdev.info/youplay/product/assassins-creed-4/"
+              data-stylerecorder="true"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="/src/img/swiper2.jpeg" /></div>
+        <div class="swiper-slide"><img src="/src/img/swiper3.jpeg" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <!-- <img class="hover-img" src="/src/img/swiper2.jpeg" /> -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <!-- Countdown Timer  -->
+    <section id="countdown-section">
+      <div class="container">
+        <div class="text-countdown">
+          <h2 class="text">
+            The Witcher 3:<br />
+            Wild Hunt
+          </h2>
+          <p id="countdown"></p>
+        </div>
+        <a
+          class="btn"
+          href="https://wp.nkdev.info/youplay/coming-soon/"
+          target="_self"
+        >
+          Purchase
+        </a>
+      </div>
+    </section>
+    <!-- Products -->
+    <section id="products-section">
+      <div class="products-container">
+        <div class="left">
+          <div class="left-top">
+            <div class="navigation">
+              <a class="home" href="https://wp.nkdev.info/youplay">Home</a>
+              <i class="fa-solid fa-arrow-right"></i>
+              <a class="shop" href="#">Shop</a>
+            </div>
+            <div class="count-select">
+              <p class="count">Showing 1–9 of 15 results</p>
+              <div class="options">
+                <select name="orderby" class="orderby">
+                  <option value="menu_order">Default sorting</option>
+                  <option value="popularity" selected="selected">
+                    Sort by popularity
+                  </option>
+                  <option value="rating">Sort by average rating</option>
+                  <option value="date">Sort by latest</option>
+                  <option value="price">Sort by price: low to high</option>
+                  <option value="price-desc">Sort by price: high to low</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="left-bottom">
+            <div class="products">
+              <div id="product-card"></div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-form">
+            <form>
+              <p>Search for:</p>
+              <div class="youplay-input">
+                <input
+                  type="search"
+                  class="search"
+                  placeholder="Search Products…"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="right-filter">
+            <h4 class="section-title">Filter by price</h4>
+            <form action="https://wp.nkdev.info/youplay/shop/">
+              <div class="price_slider_wrapper">
+                <div class="price_slider_amount">
+                  <div class="price_label">
+                    Price: <span class="from">$0</span> —
+                    <span class="to">$50</span>
+                  </div>
+                  <a class="btn-filter">Filter</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="next-match">
+            <h4 class="section-title">Next Match</h4>
+            <div class="next-content">Next match not found</div>
+          </div>
+          <div class="rated-products">
+            <h4 class="section-title">Top Rated Products</h4>
+            <div class="section-content">
+              <div class="rated-element">
+                <a href="#">
+                  <div class="img">
+                    <img src="/src/img/7.jpeg" alt="img" />
+                  </div>
+                </a>
+                <div class="text-price">
+                  <a href="#">Middle-earth</a>
+                  <div class="stars">★★★☆☆</div>
+                  <div class="price">$ 29.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="section-content">
+              <div class="rated-element">
+                <a href="#">
+                  <div class="img">
+                    <img src="/src/img/3.jpeg" alt="img" />
+                  </div>
+                </a>
+                <div class="text-price">
+                  <a href="#">Kingdoms of Amalur</a>
+                  <div class="stars">★★★★☆</div>
+                  <div class="price">$ 12.90</div>
+                </div>
+              </div>
+            </div>
+            <div class="section-content">
+              <div class="rated-element">
+                <a href="#">
+                  <div class="img">
+                    <img src="/src/img/2.jpeg" alt="img" />
+                  </div>
+                </a>
+                <div class="text-price">
+                  <a href="#">Skyrim</a>
+                  <div class="stars">★★☆☆☆</div>
+                  <div class="price">$ 16.77</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-categories">
+            <h4 class="section-title">Product Categories</h4>
+            <ul class="categories-list">
+              <li class="list-element"><a href="#">Adventure</a></li>
+              <li class="list-element"><a href="#">RPG</a></li>
+              <li class="list-element"><a href="#">Shooter</a></li>
+              <li class="list-element"><a href="#">Uncategorized</a></li>
+            </ul>
+          </div>
+          <div class="product-tags">
+            <h4 class="section-title">Product Tags</h4>
+            <div class="links">
+              <a href="#">38 studios</a>
+              <a href="#">activision</a>
+              <a href="#">bethesda</a>
+              <a href="#">blizzard</a>
+              <a href="#">capcom</a>
+              <a href="#">cd projekt</a>
+              <a href="#">deck13</a>
+              <a href="#">dream</a>
+              <a href="#" class="link-softwer">from software</a>
+              <a href="#">gameloft</a>
+              <a href="#">marvelous</a>
+              <a href="#">piranha</a>
+              <a href="#">ubisoft</a>
+              <a href="#">valve</a>
+            </div>
+          </div>
+          <div class="twitter">
+            <h4 class="section-title">Twitter</h4>
+            <div class="youplay-twitter">
+              You currently have access to a subset of Twitter API v2 endpoints
+              and limited v1.1 endpoints (e.g. media post, oauth) only. If you
+              need access to this endpoint, you may need a different access
+              level. You can learn more here:
+              https://developer.twitter.com/en/portal/product
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="social">
+          <h3>Connect socially with <strong>youplay</strong></h3>
+          <div class="social-icons">
+            <div class="social-icon">
+              <a
+                href="https://www.facebook.com/nKPremiumThings/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <span>Like on Facebook</span>
+            </div>
+            <div class="social-icon">
+              <a
+                href="https://twitter.com/nkdevv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+              <span>Follow on Twitter</span>
+            </div>
+            <div class="social-icon">
+              <a
+                href="https://plus.google.com/105540650896894558095/posts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-google-plus"></i>
+              </a>
+              <span>Follow on Google+</span>
+            </div>
+            <div class="social-icon">
+              <a
+                href="https://www.youtube.com/user/nKdevelopers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
+              <span>Watch on Youtube</span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div><strong>nK</strong> © 2019. All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/src/js/index.js"></script>
+</html>
